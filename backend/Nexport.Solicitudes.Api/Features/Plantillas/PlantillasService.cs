@@ -15,7 +15,7 @@ public class PlantillasService(NexportDbContext db, Reloj reloj)
         "Estimado/a {solicitante}:\n\n" +
         "Su solicitud {folio} fue aprobada para {fecha_requerida} · {turno}.\n" +
         "Sector: {sector}. Observaciones: {obs_aprobacion}.\n\n" +
-        "Saludos cordiales,\nOperaciones CFS IMPO · Ultraport";
+        "Saludos cordiales,\nOperaciones CFS IMPO · NXPORT";
 
     public async Task<PlantillasDto> ObtenerTodasAsync()
     {

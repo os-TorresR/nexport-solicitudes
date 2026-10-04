@@ -11,7 +11,7 @@ public class CorreoOptions
     public string Usuario { get; set; } = "";
     public string Password { get; set; } = "";
     public string Remitente { get; set; } = "";
-    public string NombreRemitente { get; set; } = "NEXPORT";
+    public string NombreRemitente { get; set; } = "NXPORT";
     public List<string> AdminDestinatarios { get; set; } = [];
     public string CarpetaSimulados { get; set; } = "correos-simulados";
 }

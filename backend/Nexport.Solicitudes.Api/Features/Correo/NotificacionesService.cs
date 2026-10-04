@@ -91,7 +91,7 @@ public class NotificacionesService(
             Le enviaremos otro correo cuando la solicitud sea revisada. Puede seguir su estado en:
             {UrlFrontend}/solicitudes/{Uri.EscapeDataString(s.Folio)}
 
-            Operaciones CFS IMPO · Ultraport
+            Operaciones CFS IMPO · NXPORT
             """;
         await RegistrarYEnviarAsync(s.Id, TiposComunicacion.AcuseCliente, [s.CorreoSolicitante], asunto, cuerpo, null);
     }
@@ -114,7 +114,7 @@ public class NotificacionesService(
 
             Saludos cordiales,
             {responsable}
-            Operaciones CFS IMPO · Ultraport
+            Operaciones CFS IMPO · NXPORT
             """;
         return RegistrarYEnviarAsync(s.Id, TiposComunicacion.InfoSolicitada, [s.CorreoSolicitante], asunto, cuerpo, null);
     }
@@ -141,14 +141,14 @@ public class NotificacionesService(
 
     public async Task AvisarCuentaActivadaAsync(Usuario u)
     {
-        var asunto = "Tu cuenta NEXPORT fue activada";
+        var asunto = "Tu cuenta NXPORT fue activada";
         var cuerpo = $"""
             Hola {u.Nombre}:
 
             Tu cuenta del portal de solicitudes de servicios CFS IMPO ya está activa.
             Ingresa en: {UrlFrontend}/ingresar
 
-            Operaciones CFS IMPO · Ultraport
+            Operaciones CFS IMPO · NXPORT
             """;
         await RegistrarYEnviarAsync(null, TiposComunicacion.CuentaActivada, [u.Correo], asunto, cuerpo, null);
     }

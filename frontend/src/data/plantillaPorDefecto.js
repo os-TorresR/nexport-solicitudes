@@ -5,7 +5,7 @@ export const PLANTILLA_POR_DEFECTO = {
     'Estimado/a {solicitante}:\n\n' +
     'Su solicitud {folio} fue aprobada para {fecha_requerida} · {turno}.\n' +
     'Sector: {sector}. Observaciones: {obs_aprobacion}.\n\n' +
-    'Saludos cordiales,\nOperaciones CFS IMPO · Ultraport',
+    'Saludos cordiales,\nOperaciones CFS IMPO · NXPORT',
 };
 
 export const VARIABLES_PLANTILLA = [

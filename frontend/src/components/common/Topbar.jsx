@@ -4,9 +4,9 @@ export default function Topbar({ subtitulo, badge, inicio = '/', className = '',
   return (
     <header className={`topbar ${className}`}>
       <Link to={inicio} className="brand">
-        <div className="logo" aria-hidden="true">U</div>
+        <div className="logo" aria-hidden="true">N</div>
         <div>
-          <div className="brand-title">ULTRAPORT · NEXPORT</div>
+          <div className="brand-title">NXPORT</div>
           <div className="brand-sub">{subtitulo}</div>
         </div>
       </Link>
